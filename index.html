@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Prieto | Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-content">
+    <h2>John Prieto</h2>
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<!-- Scroll Progress -->
+<div id="scrollProgress"></div>
+
+<!-- Particle Background -->
+<canvas id="particles"></canvas>
+
+<header class="navbar">
+  <div class="logo">John Prieto</div>
+
+  <nav class="nav-links" aria-label="Primary navigation">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#process">Process</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="controls">
+    <button id="themeToggle" aria-label="Toggle color theme">&#127769;</button>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" role="button" tabindex="0">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="hero section">
+  <div class="parallax">
+    <p class="eyebrow">Available for New Web Projects</p>
+    <h1>Websites that look premium and turn visitors into real inquiries.</h1>
+    <p>I design and build WordPress websites for service businesses that need stronger trust, cleaner messaging, and a site they can actually maintain after launch.</p>
+    <p class="hero-subtext">Built with a conversion-first structure, fast loading pages, and mobile UX that feels intentional.</p>
+    <div class="hero-tags">
+      <span>WordPress + Elementor</span>
+      <span>Custom UI Sections</span>
+      <span>Mobile-First UX</span>
+      <span>Speed Optimization</span>
+    </div>
+    <div class="hero-actions">
+      <button type="button" onclick="scrollToPortfolio()">View Portfolio</button>
+      <a class="secondary-btn" href="#contact">Book a Discovery Call</a>
+    </div>
+    <div class="hero-metrics">
+      <div>
+        <strong>5+ Years</strong>
+        <span>Development Experience</span>
+      </div>
+      <div>
+        <strong>6 Live Samples</strong>
+        <span>WordPress Projects</span>
+      </div>
+      <div>
+        <strong>24h</strong>
+        <span>Typical Response Time</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section section-alt">
+  <h2>What I Can Handle for Your Website</h2>
+  <p class="section-intro">From full builds to focused upgrades, I prioritize updates that improve clarity, speed, and conversion.</p>
+  <div class="context-grid">
+    <article class="context-card">
+      <h3>Full Website Build</h3>
+      <p>From sitemap and sections to final polish, I build complete WordPress websites aligned to your brand and audience goals.</p>
+    </article>
+    <article class="context-card">
+      <h3>Redesign &amp; Cleanup</h3>
+      <p>I modernize outdated sites, clean visual clutter, and improve content flow so users can quickly understand your offer.</p>
+    </article>
+    <article class="context-card">
+      <h3>Landing Pages</h3>
+      <p>I create campaign-ready pages with clear CTA placement and streamlined copy structure for better inquiry quality.</p>
+    </article>
+    <article class="context-card">
+      <h3>Speed + Mobile Optimization</h3>
+      <p>I improve page performance and mobile behavior so your website stays smooth, fast, and credible on every device.</p>
+    </article>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <p class="portfolio-hint">Each box is one WordPress project folder. Click to view all screenshots.</p>
+  <div id="web" class="projects">
+    <article class="card" data-project-type="WordPress Project" data-project-title="Best Life" data-project-summary="Website project screenshots from the BLife folder." data-stack="WordPress, Custom Theme, Responsive UI" data-role="Web Developer" data-outcome="Delivered a polished client-facing WordPress experience." data-highlights="Homepage and section layouts|Responsive page treatment|Branded component styling" data-media-images="media/blife/1.png|media/blife/2%20(1).png|media/blife/3.png|media/blife/4.png">
+      <img src="media/blife/1.png" alt="BLife WordPress project preview">
+      <h3>Best Life</h3>
+      <p>WordPress website project.</p>
+    </article>
+    <article class="card" data-project-type="WordPress Project" data-project-title="L&P" data-project-summary="Website project screenshots from the Launch & Propser folder." data-stack="WordPress, CMS, Frontend" data-role="Web Developer" data-outcome="Built and shipped a clean content-focused website." data-highlights="Landing page structure|Content hierarchy|Mobile-friendly design" data-media-images="media/l%26prosper/1.png|media/l%26prosper/2.png|media/l%26prosper/3.png">
+      <img src="media/l%26prosper/1.png" alt="L and Prosper WordPress project preview">
+      <h3>L&amp;Prosper</h3>
+      <p>WordPress website project.</p>
+    </article>
+    <article class="card" data-project-type="WordPress Project" data-project-title="Linq" data-project-summary="Website project screenshots from the Linq folder." data-stack="WordPress, UX, Theme Customization" data-role="Web Developer" data-outcome="Prepared portfolio-ready web experience visuals." data-highlights="Visual consistency|Template adaptation|Responsive layout handling" data-media-images="media/linq/1.png|media/linq/2.png|media/linq/3.png">
+      <img src="media/linq/1.png" alt="Linq WordPress project preview">
+      <h3>Linq</h3>
+      <p>WordPress website project.</p>
+    </article>
+    <article class="card" data-project-type="WordPress Project" data-project-title="Skin Reset" data-project-summary="Website project screenshots from the Skinor folder." data-stack="WordPress, Frontend UI, CMS" data-role="Web Developer" data-outcome="Captured polished screens for delivery and portfolio use." data-highlights="Homepage visuals|Section presentation|Device-friendly rendering" data-media-images="media/skinor/1.png|media/skinor/2.png|media/skinor/3.png">
+      <img src="media/skinor/1.png" alt="Skinor WordPress project preview">
+      <h3>Skin Reset</h3>
+      <p>WordPress website project.</p>
+    </article>
+    <article class="card" data-project-type="WordPress Project" data-project-title="TLC" data-project-summary="Website project screenshots from the TLC folder." data-stack="WordPress, Content Layout, Styling" data-role="Web Developer" data-outcome="Shipped clear page structure and branded presentation." data-highlights="Content blocks|Page-level consistency|Responsive touchpoints" data-media-images="media/tlc/1.png|media/tlc/2.png|media/tlc/3.png">
+      <img src="media/tlc/1.png" alt="TLC WordPress project preview">
+      <h3>TLC</h3>
+      <p>WordPress website project.</p>
+    </article>
+    <article class="card" data-project-type="WordPress Project" data-project-title="Ultherapy" data-project-summary="Website project screenshots from the UTherapy folder." data-stack="WordPress, UX, Content Management" data-role="Web Developer" data-outcome="Organized project visuals into a clean showcase box." data-highlights="User-friendly layout|Information structure|Consistent visual style" data-media-images="media/utherapy/1.png|media/utherapy/2.png|media/utherapy/3.png">
+      <img src="media/utherapy/1.png" alt="UTherapy WordPress project preview">
+      <h3>UTherapy</h3>
+      <p>WordPress website project.</p>
+    </article>
+  </div>
+</section>
+
+<section id="process" class="section section-alt">
+  <h2>Simple Process, Zero Guesswork</h2>
+  <p class="section-intro">You always know what stage we are in and what happens next.</p>
+  <div class="context-grid process-grid">
+    <article class="context-card">
+      <h3>1. Discovery</h3>
+      <p>We align on goals, audience, and what the website must achieve in business terms.</p>
+    </article>
+    <article class="context-card">
+      <h3>2. Structure</h3>
+      <p>I plan page hierarchy, section logic, and CTA flow before visual refinement starts.</p>
+    </article>
+    <article class="context-card">
+      <h3>3. Build</h3>
+      <p>I implement responsive pages in WordPress with a clean, manageable content setup.</p>
+    </article>
+    <article class="context-card">
+      <h3>4. Launch Support</h3>
+      <p>We perform QA, final optimization, and handoff support so your team can maintain the site confidently.</p>
+    </article>
+  </div>
+</section>
+
+<section id="workstyle" class="section">
+  <h2>What Working With Me Looks Like</h2>
+  <p class="section-intro">No guesswork, no overengineering, and no disappearing in the middle of delivery.</p>
+  <div class="context-grid">
+    <article class="context-card">
+      <h3>Clear Project Phases</h3>
+      <p>I break projects into practical phases: discovery, structure, UI polish, optimization, and launch checks. You always know where things stand.</p>
+    </article>
+    <article class="context-card">
+      <h3>Built for Real Use</h3>
+      <p>Pages are designed for how clients actually edit content later, with repeatable layouts and a backend that stays manageable after handoff.</p>
+    </article>
+    <article class="context-card">
+      <h3>Business-First Decisions</h3>
+      <p>I prioritize changes that improve clarity, trust, and speed before cosmetic extras. The goal is a site that supports actual business outcomes.</p>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About</h2>
+  <p>Software Developer with 5+ years across game and WordPress development. I have shipped projects on Android, Steam, and the Minecraft Marketplace, and now focus heavily on client-ready WordPress websites.</p>
+  <div class="about-list">
+    <div>
+      <h3>Strengths</h3>
+      <ul>
+        <li>Turning vague requirements into clean, usable page structures</li>
+        <li>Balancing visual quality with page speed and maintainability</li>
+        <li>Keeping communication simple throughout the build process</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Typical Projects</h3>
+      <ul>
+        <li>Service business websites and landing page systems</li>
+        <li>WordPress redesigns focused on clarity and modern UX</li>
+        <li>Performance and mobile optimization for existing sites</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Let&apos;s Build a Website Your Clients Trust</h2>
+  <p>If you need a new WordPress site, redesign, or cleanup work on an existing build, I can help you ship a clearer and more credible web presence.</p>
+  <div class="contact-box">
+    <p><strong>Email:</strong> prietojohnchristian@gmail.com</p>
+    <p><strong>Based in:</strong> Philippines (Remote)</p>
+    <p><strong>Response time:</strong> Usually within 24 hours</p>
+    <a class="secondary-btn contact-cta" href="mailto:prietojohnchristian@gmail.com">Send Project Details</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 John Prieto
+</footer>
+
+<div id="projectModal" class="project-modal" hidden>
+  <div class="project-modal__backdrop" data-close-modal></div>
+  <div class="project-modal__panel" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+    <button type="button" class="project-modal__close" aria-label="Close project details" data-close-modal>&times;</button>
+    <p id="projectModalType" class="project-modal__type"></p>
+    <h3 id="projectModalTitle"></h3>
+    <p id="projectModalSummary" class="project-modal__summary"></p>
+    <div id="projectModalGallery" class="project-modal__gallery"></div>
+    <ul id="projectModalHighlights" class="project-modal__highlights"></ul>
+    <p><strong>Stack:</strong> <span id="projectModalStack"></span></p>
+    <p><strong>Role:</strong> <span id="projectModalRole"></span></p>
+    <p><strong>Outcome:</strong> <span id="projectModalOutcome"></span></p>
+  </div>
+</div>
+
+<div id="imageLightbox" class="image-lightbox" hidden>
+  <div class="image-lightbox__backdrop" data-close-lightbox></div>
+  <div class="image-lightbox__panel" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" class="image-lightbox__close" aria-label="Close image preview" data-close-lightbox>&times;</button>
+    <img id="imageLightboxPreview" src="" alt="Expanded project preview">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
